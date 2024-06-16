@@ -1,6 +1,6 @@
-import {rentify,rentifyFetch} from 'rentify-details.js';
-import {save,changes,view} from 'common.js';
-import {viewbutton} from 'commonfunction.js';
+import {rentify,rentifyFetch} from './rentify-details.js';
+import {save,changes,view} from './common.js';
+import {viewbutton} from './commonfunction.js';
 
 rentifyFetch(loadSaveRentify);
 
