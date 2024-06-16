@@ -1,7 +1,7 @@
-import {rentifyFetchHomepage,rentify} from '../js/rentify-details.js';
-import {save} from '../js/common.js';
-import {view,changeviewtype,loginuser} from '../js/common.js';
-import {anotherTimeSave,anotherTimesaved,viewbutton,savelength} from '../js/commonfunction.js';
+import {rentifyFetchHomepage,rentify} from 'rentify-details.js';
+import {save} from 'common.js';
+import {view,changeviewtype,loginuser} from 'common.js';
+import {anotherTimeSave,anotherTimesaved,viewbutton,savelength} from 'commonfunction.js';
 
 rentifyFetchHomepage(loadRentify);
 
@@ -247,9 +247,9 @@ function loadRentify(){
             let html = `
             <div class="login-side" style="background-color:rgba(255, 255, 255, 0.299);">
                 <div class="buyer-tooltip">
-                    <a href="../save.html">
+                    <a href="save.html">
                             <div class="save-image">
-                                <img class="header-save-image" src="../rentify-images/—Pngtree—line icon save_5784773.png">
+                                <img class="header-save-image" src="—Pngtree—line icon save_5784773.png">
                                 <div class="save-total js-save-total">
                                     <div class="save-total-number ">
                                                     ${save.length}
@@ -260,7 +260,7 @@ function loadRentify(){
                 </div>
                 <div class="seller-tooltip">
                     <div class="header-login" style="margin:0px;" >
-                        <img class="header-save-image" style="width:30px; height:30px; margin:0px;" src="../rentify-images/user.png">
+                        <img class="header-save-image" style="width:30px; height:30px; margin:0px;" src="user.png">
                         
                     </div>
                 </div>
@@ -290,18 +290,18 @@ function loadRentify(){
                                 <img class="images" src="https://web-6nxbzmltd9q5.up-de-fra1-k8s-1.apps.run-on-seenode.com/api/image/show?id=${rentify.image[0].id}">
                         </div>
                         <div class="rentify-details">
-                            <img class="location" src="../rentify-images/pngwing.com.png">
+                            <img class="location" src="pngwing.com.png">
                             <div class="rentify-place">${rentify.district}, ${rentify.state}</div>
                             <div class="some-details">
                                 <div class="some-detail">
-                                    <img style="width:12px;margin-right:8px;" src="../rentify-images/double-bed.png">
+                                    <img style="width:12px;margin-right:8px;" src="double-bed.png">
                                     Bedroom : ${rentify.numberofbedroom}
                                 </div>
                                 <div class="dots">
                                     .
                                 </div>
                                 <div class="some-detail">
-                                    <img style="width:12px;margin-right:8px;" src="../rentify-images/shower.png">
+                                    <img style="width:12px;margin-right:8px;" src="shower.png">
                                     Bath : ${rentify.numberofbathroom}
                                 </div>
                             </div>
@@ -355,18 +355,18 @@ function loadRentify(){
                                                 <img class="images" src="https://web-6nxbzmltd9q5.up-de-fra1-k8s-1.apps.run-on-seenode.com/api/image/show?id=${rentify.image[0].id}">
                                         </div>
                                         <div class="rentify-details">
-                                            <img class="location" src="../rentify-images/pngwing.com.png">
+                                            <img class="location" src="pngwing.com.png">
                                             <div class="rentify-place">${rentify.district}, ${rentify.state}</div>
                                             <div class="some-details">
                                                 <div class="some-detail">
-                                                    <img style="width:12px;margin-right:8px;" src="../rentify-images/double-bed.png">
+                                                    <img style="width:12px;margin-right:8px;" src="double-bed.png">
                                                     Bedroom : ${rentify.numberofbedroom}
                                                 </div>
                                                 <div class="dots">
                                                     .
                                                 </div>
                                                 <div class="some-detail">
-                                                    <img style="width:12px;margin-right:8px;" src="../rentify-images/shower.png">
+                                                    <img style="width:12px;margin-right:8px;" src="shower.png">
                                                     Bath : ${rentify.numberofbathroom}
                                                 </div>
                                             </div>
@@ -502,7 +502,7 @@ if(loginuser==="m"){
     localStorage.setItem('windowside',JSON.stringify(data));
     document.querySelector('.js-login').innerHTML=`
         <a href="login.html">
-                <img class="header-save-image" src="../rentify-images/user.png">
+                <img class="header-save-image" src="user.png">
                 <div class="login-tooltip">Login</div>
         </a>
     `;
