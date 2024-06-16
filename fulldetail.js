@@ -1,5 +1,5 @@
-import { view } from 'common.js';
-import {rentify,rentifyFetch} from 'rentify-details.js';
+import { view } from './common.js';
+import {rentify,rentifyFetch} from './rentify-details.js';
 
 
 rentifyFetch(loadFulldetailpage);
