@@ -1,6 +1,6 @@
-import { rentify,rentifyFetch } from "./rentify-details.js";
-import { view ,loginuser} from "./common.js";
-import {anotherTimeSave,anotherTimesaved,viewbutton} from '../js/commonfunction.js';
+import { rentify,rentifyFetch } from "rentify-details.js";
+import { view ,loginuser} from "common.js";
+import {anotherTimeSave,anotherTimesaved,viewbutton} from 'commonfunction.js';
 
 rentifyFetch(loadViewpage);
 
@@ -37,7 +37,7 @@ function loadViewpage(){
                                     <td colspan="1"></td>
 
                                     <td  class="texts" align="end" colspan="1">
-                                        <img class="logos" src="../rentify-images/pngwing.com.png">
+                                        <img class="logos" src="pngwing.com.png">
                                     </td>
                                     <td  colspan="1"class="texts" align="end">
                                         Area :
@@ -48,7 +48,7 @@ function loadViewpage(){
                                 </tr>
                                 <tr>
                                     <td align="end" colspan="2"  class="texts">
-                                        <img class="logos" src="../rentify-images/shower.png">
+                                        <img class="logos" src="shower.png">
                                     
                                     </td>
                                     <td  class="texts" align="end">
@@ -56,7 +56,7 @@ function loadViewpage(){
                                     </td>
                                     <td class="texts" style="color:rgb(12, 9, 95);padding-left:10px;">${rentify.numberofbathroom}</td>
                                     <td align="end" colspan="2"  class="texts">
-                                        <img class="logos" src="../rentify-images/double-bed.png">
+                                        <img class="logos" src="double-bed.png">
                                         
                                     </td>
                                     <td  class="texts" align="end">
@@ -67,7 +67,7 @@ function loadViewpage(){
                                 </tr>
                                 <tr>
                                     <td align="end" class="texts">
-                                        <img class="logos" src="../rentify-images/hospital-buildings (1).png">
+                                        <img class="logos" src="hospital-buildings (1).png">
                                         
                                     </td>
                                     <td  class="texts" align="end">
@@ -75,7 +75,7 @@ function loadViewpage(){
                                     </td>
                                     <td  class="texts" style="color:rgb(12, 9, 95); padding-left:10px;">${rentify.hospital}km</td>
                                     <td align="end" class="texts">
-                                        <img class="logos" src="../rentify-images/school.png">
+                                        <img class="logos" src="school.png">
                                     
                                     </td>
                                     <td  class="texts" align="end">
@@ -83,7 +83,7 @@ function loadViewpage(){
                                     </td>
                                     <td  class="texts" style="color:rgb(12, 9, 95); padding-left:10px;">${rentify.school}km</td>
                                     <td align="end" class="texts">
-                                        <img class="logos" src="../rentify-images/college.png">
+                                        <img class="logos" src="college.png">
                                         
                                     </td>
                                     <td  class="texts" align="end">
@@ -135,18 +135,18 @@ function loadViewpage(){
                                                 <img class="images" src="https://web-6nxbzmltd9q5.up-de-fra1-k8s-1.apps.run-on-seenode.com/api/image/show?id=${rentify.image[0].id}">
                                         </div>
                                         <div class="rentify-details">
-                                            <img class="location" src="../rentify-images/pngwing.com.png">
+                                            <img class="location" src="pngwing.com.png">
                                             <div class="rentify-place">${rentify.district}, ${rentify.state}</div>
                                             <div class="some-details">
                                                 <div class="some-detail">
-                                                    <img style="width:12px;margin-right:8px;" src="../rentify-images/double-bed.png">
+                                                    <img style="width:12px;margin-right:8px;" src="double-bed.png">
                                                     Bedroom : ${rentify.numberofbedroom}
                                                 </div>
                                                 <div class="dots">
                                                     .
                                                 </div>
                                                 <div class="some-detail">
-                                                    <img style="width:12px;margin-right:8px;" src="../rentify-images/shower.png">
+                                                    <img style="width:12px;margin-right:8px;" src="shower.png">
                                                     Bath : ${rentify.numberofbathroom}
                                                 </div>
                                             </div>
