@@ -1,6 +1,6 @@
-import { rentify,rentifyFetch } from "rentify-details.js";
-import { view ,loginuser} from "common.js";
-import {anotherTimeSave,anotherTimesaved,viewbutton} from 'commonfunction.js';
+import { rentify,rentifyFetch } from "./rentify-details.js";
+import { view ,loginuser} from "./common.js";
+import {anotherTimeSave,anotherTimesaved,viewbutton} from './commonfunction.js';
 
 rentifyFetch(loadViewpage);
 
