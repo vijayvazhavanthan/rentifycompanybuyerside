@@ -1,5 +1,5 @@
-import { view } from '../js/common.js';
-import {rentify,rentifyFetch} from '../js/rentify-details.js';
+import { view } from 'common.js';
+import {rentify,rentifyFetch} from 'rentify-details.js';
 
 
 rentifyFetch(loadFulldetailpage);
@@ -34,7 +34,7 @@ function loadFulldetailpage(){
                         <tr>
                             <td colspan="2"></td>
                             <td  class="texts" align="end">
-                                <img class="logos" src="../rentify-images/pngwing.com.png">
+                                <img class="logos" src="pngwing.com.png">
                             </td>
                             <td  class="texts" align="end">
                                 Area :
@@ -45,7 +45,7 @@ function loadFulldetailpage(){
                         </tr>
                         <tr>
                             <td align="end" colspan="2"  class="texts">
-                                <img class="logos" src="../rentify-images/shower.png">
+                                <img class="logos" src="shower.png">
                             
                             </td>
                             <td  class="texts" align="end">
@@ -53,7 +53,7 @@ function loadFulldetailpage(){
                             </td>
                             <td class="texts" style="color:rgb(12, 9, 95);padding-left:10px;">${rentify.numberofbathroom}</td>
                             <td align="end" colspan="2"  class="texts">
-                                <img class="logos" src="../rentify-images/double-bed.png">
+                                <img class="logos" src="double-bed.png">
                                 
                             </td>
                             <td  class="texts" align="end">
@@ -64,7 +64,7 @@ function loadFulldetailpage(){
                         </tr>
                         <tr>
                             <td align="end" class="texts">
-                                <img class="logos" src="../rentify-images/hospital-buildings (1).png">
+                                <img class="logos" src="hospital-buildings (1).png">
                                 
                             </td>
                             <td  class="texts" align="end">
@@ -72,7 +72,7 @@ function loadFulldetailpage(){
                             </td>
                             <td  class="texts" style="color:rgb(12, 9, 95); padding-left:10px;">${rentify.hospital}km</td>
                             <td align="end" class="texts">
-                                <img class="logos" src="../rentify-images/school.png">
+                                <img class="logos" src="school.png">
                             
                             </td>
                             <td  class="texts" align="end">
@@ -80,7 +80,7 @@ function loadFulldetailpage(){
                             </td>
                             <td  class="texts" style="color:rgb(12, 9, 95); padding-left:10px;">${rentify.school}km</td>
                             <td align="end" class="texts">
-                                <img class="logos" src="../rentify-images/college.png">
+                                <img class="logos" src="college.png">
                                 
                             </td>
                             <td  class="texts" align="end">
@@ -90,7 +90,7 @@ function loadFulldetailpage(){
                         </tr>
                         <tr>
                             <td align="end" colspan="3"  class="texts">
-                                <img class="logos" src="../rentify-images/email.png">
+                                <img class="logos" src="email.png">
                             
                             </td>
                             <td  class="texts" align="end">
@@ -103,7 +103,7 @@ function loadFulldetailpage(){
                         </tr>
                         <tr>
                             <td align="end" colspan="3"  class="texts">
-                                <img class="logos" src="../rentify-images/phone-call.png">
+                                <img class="logos" src="phone-call.png">
                             
                             </td>
                             <td  class="texts" align="end">
@@ -133,7 +133,7 @@ function loadFulldetailpage(){
                     <table>
                             <tr>
                                         <td class="texts">
-                                            <img class="logos" src="../rentify-images/account.png">
+                                            <img class="logos" src="account.png">
                                             Name :
                                         </td>
                                         <td class="texts" style="color:black; padding-left:10px;">${rentify.name}</td>
