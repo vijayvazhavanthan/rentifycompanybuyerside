@@ -477,7 +477,7 @@ body{
     background-color:lightgray;
     height:260px;
     padding-top:150px;
-    background-image: url('../rentify-images/body-backgrounds.jpg');
+    background-image: url('body-backgrounds.jpg');
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
