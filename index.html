@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="max-header">
+            <div class="header">
+                <div class="logo-side">
+                    <div class="logo-side-flex">
+                        <img class="js-threedots" style="width:20px; cursor: pointer;" src="../rentify-images/three-dots.png">
+                    </div>
+                    
+                </div>
+                <div class="search-side">
+                    <div class="searchh">
+                        <div class="search-side-flex">
+                            <a href="../index.html">
+                                <img class="rentify-logo" src="../rentify-images/Rentify.png">
+                            </a>
+                            <!--
+                            <input class="text1 js-text1" type="text" placeholder="Location" >
+                            <input class="text1 js-text2" type="text" placeholder="Type">
+                            <input class="text1 js-text3" type="text" placeholder="Price">
+                            <button class="search js-search">
+                                <img class="search-image" src="../rentify-images/search.svg">
+                                <div class="search-tooltip">Search</div>
+                            </button>
+                            -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="other-side">
+                    <div class="logo-side-flex">
+                        <a href="../save.html">
+                            <div class="save-image">
+                                <img class="header-save-image" src="../rentify-images/—Pngtree—line icon save_5784773.png"> 
+                                <div class="save-total-number js-save-total">
+                                        0
+                                </div>   
+                                <div class="save-tooltip">Save</div>
+                            </div>
+                        </a>
+                        <div>
+                            <div class="header-login js-login">
+                               <!--user login in js-->
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+       <header class="mini-logo">
+            <div class="header">
+                
+                <div class="logo-side" style="display:flex; justify-content:center;align-items: center; width:50px;">
+                    <img class="js-threedot" style="width:20px; cursor: pointer;" src="../rentify-images/three-dots.png">
+                </div>
+            
+                <div class="search-side">
+                    
+                    
+                    <div class="search-side-flex">
+                        <a href="../index.html">
+                            <img class="rentify-logo" src="../rentify-images/Rentify.png">
+                        </a>
+                        <!--
+                        <input class="text1" type="text" placeholder="Location">
+                        <input class="text1" type="text" placeholder="Type">
+                        <input class="text1" type="text" placeholder="Price">
+                        <button class="search">
+                            <img class="search-image" src="../rentify-images/search.svg">
+                            <div class="search-tooltip">Search</div>
+                        </button>
+                        -->
+                    </div>
+                    
+                </div>
+                <div class="other-side" style="padding-left:10px;display:flex;justify-content: center;align-items: center;">
+                    
+                    <img class="js-header-login" onclick="" style="width:20px; cursor: pointer;"src="../rentify-images/Rentify-mini-icon.png">
+                    <div style="width:50px;background-color: rgba(255, 255, 255, 0.299); cursor: pointer;" class="js-loginopacity">
+    
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+
+        <div class="js-other-details">
+            <!--three dots click show the details in home page-->
+
+        </div>
+
+
+
+        <div class="js-no-display">
+            <!--when other details display thats time js use(js-no-display) to icnor the filter -->
+            <div class="filter" style="z-index:40;">
+                <div class="filter-option ">
+                    <div class="js-filter filter-text">
+                        <div style="display:flex; justify-content: center; align-items: center;">
+                                    <div class="container" style="width:270px;">
+
+                                        <div class="select_option">
+                                            <select   class="form-select country countrydesign" aria-label="Default select example" onchange="loadStates()">
+                                                <option selected>--Select Country--</option>
+                                            </select>
+                                            <select id="2" class="form-select state statedesign  getvalue" aria-label="Default select example" onchange="loadCities()">
+                                                <option selected>--Select State--</option>
+                                            </select>
+                                            <select id="3" class="form-select city citydesign" aria-label="Default select example">
+                                                <option selected>--Select City--</option>
+                                            </select>
+                                        </div>
+                                        <div style="display: flex;  justify-content: center;  align-items: center;">
+                                            
+                                            <button class="search js-search">
+                                                
+                                                    <img style="width:16px; margin-right:6px;" src="../rentify-images/filter.png">    
+                                                    Filter
+                                                
+                                                <!--<img class="search-image" src="../rentify-images/search.svg">-->
+                                               
+                                                <!--<div class="search-tooltip">Search</div>-->
+                                            </button>
+                                        </div> 
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="js-option">
+                        <!--js-filter-option show or not-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+       <!--
+       <main  class="grid-rentify js-main-rentify-details show-or-not-main ">-->
+            <!--js use to upload rentify details in main-->
+
+       <!--</main>-->
+
+        <div class="show-or-not">
+            
+            
+            <div class="three-d-images-contionar">
+                <div>
+
+                </div>
+                
+                <div class="three-d-images-flex" style="z-index:20px;">
+                    <Div class="three-d-sweet-text-contionar">
+                        <div class="sweet-text">
+                            
+                        </div>
+                    </Div>
+                    <div class="three-d-image-sides">
+                        <!--<img class="three-d-img" src="../rentify-images/1000030297.png">-->
+                    </div>
+                    <div style="flex:1;">
+                        <div class="home-text">
+                            S<span class="weet-text">weet</span>
+                            <span class="home-txt">Home</span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="position:relative;">
+            <div class="mask-image-side" >
+                <div style="background-image: url('../rentify-images/body-backgrounds.jpg');
+                background-repeat:no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;height:200px;">
+
+                </div>
+               
+            </div>
+             <div class="main-contionar">
+                <main  class="grid-rentify js-main-rentify-details " style="padding-top:70px;">
+                    <!--js use to upload rentify details in main-->
+        
+                </main>
+                <Div style="margin:40px; display:flex; justify-content: center; align-items: center;">
+                    <div class="js-previous-button" style="flex:1;display:flex; justify-content: start; align-items: start;">
+                        
+                    </div>
+                    <div class="js-next-button" style="flex:1;display:flex; justify-content: end; align-items: end;">
+                        <button class="read-more-button js-read-more-next">Next</button>
+                    </div>
+                    
+                    
+                    
+                </Div>  
+             </div>   
+             
+        </div>
+        <script src="../js/filterselect.js"></script>
+        <script  type="module" src="../js/index.js"></script>
+
+    </body>
+</html>
