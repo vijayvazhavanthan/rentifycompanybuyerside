@@ -1,4 +1,4 @@
-import { view } from './common.js';
+import { view, loginuser  } from './common.js';
 import {rentify,rentifyFetch} from './rentify-details.js';
 
 
@@ -150,7 +150,7 @@ function loadFulldetailpage(){
 
 }
 
-document.querySelector('.js-intered-button').addEventListener('click',()=>{
+document.querySelector('.js-interested-button').addEventListener('click',()=>{
    /* 
     const data = {
         email: rentify.email,
@@ -166,4 +166,78 @@ document.querySelector('.js-intered-button').addEventListener('click',()=>{
         body: JSON.stringify(data)
     })
         */
+
+
+    view.forEach((view)=>{
+        rentify.forEach((rentify)=>{
+            console.log(view.userid,rentify.userid);
+            if(Number(view.userid)===Number(rentify.image[0].id)){
+                async function mailside(){
+                    console.log()
+                    const email = loginuser.email;
+                    const firstname = rentify.name;
+                    const lastname = "hiiiii";
+                    const phonenumber = "9123457896";
+                    
+                    const data = {
+                        name: firstname,
+                        mail: email,
+                        phonenumber: phonenumber,
+                        message: lastname
+                    };
+                    try{
+                        const response = await fetch('https://web-6nxbzmltd9q5.up-de-fra1-k8s-1.apps.run-on-seenode.com/api/aboutabout',{
+                                 method: 'POST',
+                                 headers:{
+                                     'Content-Type':'application/json'
+                                 },
+                                 body:JSON.stringify(data)
+                             });
+                         const order =await response.json();
+                         console.log(order,'u');
+                         document.querySelector('.js-mail-response').innerHTML="You Receive  the seller details in email";
+                         mailsideseller();
+                        }catch(error){
+                             console.log(error,'hlo')
+                        }
+                }
+                mailside();
+
+                async function mailsideseller(){
+                    console.log('hi');
+                    console.log(`rentifycompany@gmail.com`);
+                    const email = `rentifycompany@gmail.com`;
+                    
+                    console.log(`rentifycompany@gmail.com`,email);
+                    const firstname = loginuser.firstname;
+                    const lastname = "hiiiii";
+                    const phonenumber = `${loginuser.phonenumber}`;
+                    
+                    const data = {
+                        name: firstname,
+                        mail: email,
+                        phonenumber: phonenumber,
+                        message: lastname
+                    };
+                    try{
+                        const response = await fetch('https://web-6nxbzmltd9q5.up-de-fra1-k8s-1.apps.run-on-seenode.com/api/aboutabout',{
+                                 method: 'POST',
+                                 headers:{
+                                     'Content-Type':'application/json'
+                                 },
+                                 body:JSON.stringify(data)
+                             });
+                         const order =await response.json();
+                         console.log(order,'u');
+                         document.querySelector('.js-mail-response').innerHTML="You Receive  the seller details in email";
+                        }catch(error){
+                             console.log(error,'hlo')
+                        }
+                }
+                mailside();
+            }
+            
+        })
+    })
+
 })
