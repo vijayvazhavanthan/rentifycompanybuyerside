@@ -498,6 +498,7 @@ function previous(){
 
 console.log(loginuser,'hi');
 if(loginuser==="m"){
+    localStorage.removeItem('windowside');
     let data='index.html';
     localStorage.setItem('windowside',JSON.stringify(data));
     document.querySelector('.js-login').innerHTML=`
