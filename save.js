@@ -29,7 +29,7 @@ function loadSaveRentify(){
                                         <img class="location-icon" style="display:inline-block" src="pngwing.com.png">
                                         <div class="detail" style="display:inline-block">${rentify.district}, ${rentify.state}.</div>
                                         <div class="amount">
-                                            $ ${rentify.price}/-
+                                                &#8377; ${rentify.price}/-
                                         </div>
                                         <button style="cursor:pointer;" class="save-button js-delete" data-rentify-id="${rentify.image[0].id}">Delete</button>
                                         <button style="cursor:pointer;" class="view-button js-view-button" data-rentify-id="${rentify.image[0].id}"  data-rentify-state="${rentify.state}" data-rentify-district="${rentify.district}">View</button>
